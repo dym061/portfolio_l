@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+	<head>
+		<meta charset='UTF-8'/>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'/> 
+		<title>Lizelda von Francois - Portfolio</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'> 
+		<meta name='description' content='Freelancer, Graphic Design'/>
+		<meta name='keywords' content='lizelda von francois'/>
+		<meta name='author' content='CiestoMedia'/>
+		<link rel='stylesheet' href='fontawesome/css/all.min.css'>
+		<link rel='stylesheet' href='styles/animate.css'>
+		<link rel='icon' type='image/ico' href='favicon.ico'/>
+		
+		<style>
+			:root {
+			  --first: #223843;
+			  --second: #558B6E;
+			  --third: #904E55;
+			  --fourth: #9d90d5;
+			  --fifth: #F2DC5D;
+			  --sixth: #7F96FF;
+			  
+			  --time: 0.707s;
+			  --page-width: 1280px;
+			  --currency: "N$ ";
+			  
+			  --firstT: #0F2346ed;
+			  --secondT: #25488Fed;
+			  --secondT50: #25488F50;
+			  --thirdT: #607A9Aed;
+			  --fourthT: #E2E2E2ed;
+			  --fifthT: #EBF2FAed;
+			  --sixthT50: #D2ECFEed;
+			  }
+		
+			@font-face 
+			{
+			font-family: 'font1';
+			src: url('fonts/pathway.woff2') format('woff2');}
+				
+			@font-face 
+			{
+			font-family: 'font2';
+			src: url('fonts/merriweathersans.woff2') format('woff2');}
+
+			@font-face 
+			{
+			font-family: 'font3';
+			src: url('fonts/heebo.woff2') format('woff2');}
+
+			@font-face 
+			{
+			font-family: 'font4';
+			src: url('fonts/qwigley.woff2') format('woff2');}	
+
+			*, ::after, ::before {box-sizing: border-box;}
+
+			* {
+			margin: 0;
+			padding: 0;}
+
+			a {
+			display:inline-block;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;}
+
+			a, audio, b, body, center, dd, div, dl, dt, embed, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, iframe, img, input, label, li, menu, nav, object, ol, output, p, ruby, section, span, table, tbody, td, textarea, tfoot, th, thead, tr, tt, u, ul, var, video
+			 {
+			  margin: 0;
+			  padding: 0;
+			  border: 0;
+			  font-size: 100%;}
+
+			button{border: none;}
+
+			.cntnr {
+			  max-width: 960px; /* set maximum width */
+			  width: 100%; /* set width to 100% to fill parent element */
+			  margin: 0 auto; /* center horizontally */
+			  padding: 0 15px; /* add padding for better mobile experience */
+			  box-sizing: border-box; /* include padding and border in element's total width */
+			}
+
+			h1,h2,h3,h4,h5{font-weight:normal}
+
+			a{text-decoration:none;color:var(--sixth);}
+
+			ul {list-style-type: none;}
+
+			body
+			{
+				background-repeat: repeat-y;
+				width: auto;
+				margin:0px;
+			}			
+						
+			.bgwhite{background-color: white;}
+			
+			.con {	
+				width: var(--page-width);
+				max-width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+				box-sizing: border-box;
+				scrollbar-gutter: stable both-edges;
+			}			
+			
+			.dflex {display:flex!important;}
+			
+			.dgrid {display:grid!important;}
+			
+			.gap0 {gap: 0;}
+			
+			.grey {
+			  filter: grayscale(100%);
+			  transition: filter 0.5s ease-in-out;
+			}
+
+			.grey:hover {
+			  filter: grayscale(0%);
+			}			
+			
+			.grid4c250p {grid-template-columns: repeat(4, 350px);}
+
+			.h1 {font-size: 75px;}
+			.h2 {font-size: 65px;}
+			.h3 {font-size: 55px;}
+			.h4 {font-size: 45px;}
+			.h5 {font-size: 32px;}
+			
+			.hcenter1{justify-content:center;}
+			
+			.jusstart{justify-content:flex-start;}
+			.jusend{justify-content:flex-end;}
+			.juscenter{justify-content:center;}
+			.jusspaceb{justify-content:space-between;}
+			.jusspacea{justify-content:space-around;}
+			.jusspacee{justify-content:space-evenly;}
+			.jusinherit{justify-content:initial;}			
+			
+			.mb5 {margin-bottom: 40px;}
+			
+			.mt5 {margin-top: 40px;}
+			
+			.pt2{padding-top: 10px;}
+			.pt5 {padding-top: 40px;}
+			
+			.pb2{padding-bottom: 10px;}
+			
+			.possti{position: sticky;}
+			
+			.shadow0{box-shadow: none;transition:all .4s ease;}
+			
+			.shadow1{box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 15%);transition:all .4s ease;}
+			
+			.t0{top:0;}
+			
+			.txtcaps{text-transform: capitalize;}
+			
+			.txtcenter{text-align: center;}
+			
+			.txtcol1{color: var(--first);}
+			.txtcol2{color: var(--second);}
+			.txtcol3{color: var(--third);}
+			.txtcol4{color: var(--fourth);}
+			.txtcol5{color: var(--fifth);}
+			.txtcol6{color: var(--sixth);}			
+			
+			.txtfont1 {font-family: font1;}
+			.txtfont2 {font-family: font2;}
+			.txtfont3 {font-family: font3;}
+			.txtfont4 {font-family: font4;}		
+			
+			.txtsize1{font-size: 9px;}
+			.txtsize2{font-size: 10px;}
+			.txtsize3{font-size: 13px;}
+			.txtsize4{font-size: 16px;}
+			.txtsize5{font-size: 18px;}
+			.txtsize6{font-size: 24px;}
+
+			.txtupper{text-transform: uppercase;}			
+			
+			.w100p{width: 100%;}
+			
+			.zoomthis{transition:all 1s ease;}
+
+			.zoom-up{transform: scale(1.05) translateY(-5px);transition:all .3s ease;}
+			
+			/* For mobile devices, adjust the width of the container */
+			@media (max-width: 767px) {
+			  .cntnr {
+				max-width: 100%; /* change maximum width to fill entire screen */
+				padding: 0; /* remove padding for better mobile experience */
+			  }
+			}			
+			
+			@media only screen and (max-width: 1400px) {
+			  .grid4c250p {
+				grid-template-columns: repeat(4, 220px);
+				grid-auto-rows: 250px;
+			  }
+			}			
+
+			@media only screen and (max-width: 1024px) {
+			  .grid4c250p {
+				grid-template-columns: repeat(4, 200px);
+				grid-auto-rows: 250px;
+			  }
+			}
+
+			@media only screen and (max-width: 768px) {
+			  .grid4c250p {
+				grid-template-columns: repeat(3, 166.6666px);
+				grid-auto-rows: 166.6666px;
+			  }
+			}
+
+			@media only screen and (max-width: 480px) {
+			  .grid4c250p {
+				grid-template-columns: repeat(2, 125px);
+			   grid-auto-rows: 125px}
+		</style>
+	</head>
+	
+	<body class="">
+		<div id="top"></div>
+		<header class="pt2 pb2 dflex possti w100p t0 bgwhite shadow0"> 
+			<div class="con">
+				<h1 class="txtfont1 txtsize5 txtupper animate__animated animate__fadeIn animate__delay-2s">Graphic Designer</h1>
+				<h2 class="animate__animated animate__fadeIn animate__delay-1s txtfont4 h4 txtcenter ">Lizelda von Francois</h2>
+
+				<nav class="hcenter2 animate__animated animate__fadeIn animate__delay-5s">
+					<ul class="dflex jusspacee">
+						<li><a href="#top" class="txtcol1 txtfont2 txtsize3 txtupper">Portfolio</a></li>
+						<li><a href="#about" class="txtcol1 txtfont2 txtsize3 txtupper">About</a></li>
+						<li><a href="#contact" class="txtcol1 txtfont2 txtsize3 txtupper">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<div class="mt5"></div>
+		
+		<section class="pt5" id="portfolio ">
+			<h3 class="txtcenter"></h3>
+			<div class="dflex hcenter1 cntnr">
+				<div class="dgrid grid4c250p gap0">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/01.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/091.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/092.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/05.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/146.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/147.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/148.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/149.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/07.jpg">					
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/102.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/180.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/155.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/104.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/105.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/179.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/103.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/152.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/107.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/03.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/108.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/02.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/044.jpg">					
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/122.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/123.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/124.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/125.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/126.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/131.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/140.png">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/141.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/142.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/151.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/106.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/153.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/178.jpg">
+					<img class="h100p w100p ofitcov zoomthis grey" src="images/225.jpg">
+				</div>
+			</div>
+		</section>		
+		
+		<section class="pt5 mb5 animate__animated animate__fadeIn animate__delay-5s" id="about">
+			<h3 class=" h4 txtfont1 txtcenter pt5 mt5 mb5 pb5" >About</h3>
+			<div class="con txtsize5 txtfont3" >
+				<p class="pb3">Welcome to my graphic design portfolio! My name is Lizelda, and I'm a passionate graphic designer specializing in branding, packaging, and social media design. My particular interest lies in working with pet products, food, cosmetics, and luxury brands, but I am always eager to explore new industries and expand my skills as a graphic designer.</p>
+
+				<p class="pb3">My work reflects my dedication to creating unique and effective designs that help my clients stand out in their respective markets. I believe that design should not only be aesthetically pleasing but also functional and purposeful.</p>
+
+				<p class="pb3">Throughout my career, I've had the privilege of collaborating with a diverse range of clients, each with unique challenges and requirements. My approach to every project remains the same: to understand the client's vision, their target audience, and to craft designs that are both visually appealing and effective.</p>
+
+				<p>In my portfolio, you'll find a collection of my best work, including branding projects, packaging designs, and social media campaigns. I hope that it provides you with a glimpse into my style and capabilities as a graphic designer. Thank you for taking the time to explore my work, and I'm excited about the possibility of collaborating with you.</p>	
+			</div>
+		</section>	
+
+		<section class="animate__animated animate__fadeIn animate__delay-5s pt5 mb5" id="contact">
+		<h3 class="h4 txtfont1 txtcenter pt5 mt5 mb5 pb5" >Contact</h3>
+		</section>
+		
+		<footer class="pt5"> 
+		test
+		</footer>
+	
+	</body>
+
+	<script>
+	  const header = document.querySelector('header');
+	  window.addEventListener('scroll', () => {
+		if (window.scrollY > 50) {
+		  header.classList.add('shadow1');
+		  header.classList.remove('shadow0');
+		} else {
+		  header.classList.remove('shadow1');
+		  header.classList.add('shadow0');
+		}
+	  });
+	</script>
+	
+	
+	<script>	
+	const elements = document.querySelectorAll('.zoomthis');
+
+	elements.forEach((element) => {
+	  element.addEventListener('mouseover', () => {
+		element.classList.add('zoom-up');
+	  });
+
+	  element.addEventListener('mouseout', () => {
+		element.classList.remove('zoom-up');
+	  });
+	});
+	</script>
+
+</html>
