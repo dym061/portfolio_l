@@ -137,6 +137,9 @@
 			
 			.dgrid {display:grid}
 			
+			.fleft {float: left;}
+			.fright {float: right;}
+			
 			.gap0 {gap: 0;}
 			
 			.grey {
@@ -165,6 +168,8 @@
 			header {position: fixed;z-index: 9999;}			
 			
 			.hcenter1{justify-content:center;}
+			
+			.images {}
 			
 			.jusstart{justify-content:flex-start;}
 			.jusend{justify-content:flex-end;}
@@ -345,8 +350,7 @@
 
 			.zoom-up{transform: scale(1.05) translateY(-5px);transition:all .3s ease;}
 			
-			/*extra*/
-			
+			/*extra*/			
 			.footer-content {
 			  display: flex;
 			  align-items: center;
@@ -383,14 +387,28 @@
 			  transform: translateY(-2px);
 			  transition:all 0.3s ease;
 			}
-						
-			@media (max-width: 767px) {
-			  .cntnr {
-				max-width: 100%;
-				padding: 0;
-			  }
-			}			
 			
+			.mb-nav {display: none;}
+			.mb-on {display: none;}
+			.mb-off {display: none;}
+
+			/* Style the toggle buttons */
+			.mb-on,
+			.mb-off {
+			  background: transparent;
+			  border: none;
+			  cursor: pointer;
+			  padding: 0;
+			  margin: 0;
+			  font-size: 1.5rem;
+			  color: #000;
+			}
+
+			.mb-on i,
+			.mb-off i {
+			  margin: 0 5px;
+			}
+
 			@media only screen and (max-width: 1400px) {
 			  .grid4c250p {
 				grid-template-columns: repeat(4, 220px);
@@ -408,12 +426,26 @@
 			@media only screen and (max-width: 768px) {
 			  .grid4c250p {
 				grid-template-columns: repeat(3, 166.6666px);
-				grid-auto-rows: 166.6666px;
+				grid-auto-rows: 166.6666px;}
+				
+			  .center-m {display: block;margin: 0 auto ! important; }		
+			  .dflex-m{display:block!important;}
+			  .mr5-m {margin-right: 0px;}
+		   	  .pt5-m {padding-top: 40px;}
+
+			  nav {display: none;}
+
+			  .mb-on{display: block;}			
+			  .mb-off{display: none;}	
+			
+			  .cntnr {
+				max-width: 100%;
+				padding: 0;
+			  }			  
+			  
+			  .images {
+			    width: 70%;
 			  }
-			.center-m {display: block;margin: 0 auto ! important; }		
-			.dflex-m{display:block!important;}
-			.mr5-m {margin-right: 0px;}
-			.pt5-m {padding-top: 40px;}
 			}
 
 			@media only screen and (max-width: 480px) {
@@ -436,22 +468,40 @@
 			  display: block;
 			}
 		</style>
+		
+
 	</head>
 	
 	<body class="">
 		<div id="top"></div>
 		<header class="pt2 pb2 dflex possti w100p t0 bgwhite shadow0"> 
-			<div class="con">
+			<div class="con w100p">
 				<h1 class="txtcenter txtfont1 txtsize5 txtupper animate__animated animate__fadeIn animate__delay-2s">Graphic Designer</h1>
 				<h2 class="animate__animated animate__fadeIn animate__delay-1s txtfont4 h4 txtcenter ">Lizelda von Francois</h2>
 
-				<nav class="hcenter2 animate__animated animate__fadeIn animate__delay-5s">
-					<ul class="dflex jusspacee">
-						<li><a href="#top" class="nav-link txtcol1 txtfont2 txtsize3 txtupper">Portfolio</a></li>
-						<li><a href="#about" class="nav-link txtcol1 txtfont2 txtsize3 txtupper">About</a></li>
-						<li><a href="#contact" class="nav-link txtcol1 txtfont2 txtsize3 txtupper">Contact</a></li>
-					</ul>
+				<nav class="hcenter2">
+					<div class="animate__animated animate__fadeIn animate__delay-5s">
+						<ul class="dflex jusspacee">
+							<li><a href="#top" class="nav-link txtcol1 txtfont2 txtsize3 txtupper pb1">Portfolio</a></li>
+							<li><a href="#about" class="nav-link txtcol1 txtfont2 txtsize3 txtupper pb1">About</a></li>
+							<li><a href="#contact" class="nav-link txtcol1 txtfont2 txtsize3 txtupper pb1">Contact</a></li>
+						</ul>
+					</div>
 				</nav>
+				
+				<div class="fright mr5">
+				<button class="mb-on"><i class="fas fa-bars"></i></button>
+				<button class="mb-off"><i class="fas fa-times"></i></button>
+				</div>
+
+				<div class="mb-nav">
+					<ul class="hcenter2 txtcenter">
+						<li><a href="#top" class="nav-link txtcol1 txtfont2 txtsize3 txtupper pb1">Portfolio</a></li>
+						<li><a href="#about" class="nav-link txtcol1 txtfont2 txtsize3 txtupper pb1">About</a></li>
+						<li><a href="#contact" class="nav-link txtcol1 txtfont2 txtsize3 txtupper pb1">Contact</a></li>
+					</ul>
+				</div>	
+				
 			</div>
 		</header>
 		
@@ -504,12 +554,13 @@
 			</div>
 		</section>		
 		
-		<section class=" pt5 mb5 animate__animated animate__fadeIn animate__delay-5s pt5 mt5" id="about">
-			<h3 class=" h4 txtfont1 txtcenter pb5 mb5" >About</h3>
+		<div id="about"></div>
+		<section class=" pt5 mb5 animate__animated animate__fadeIn animate__delay-5s pt5 mt5" >
+			<h3 class=" h4 txtfont1 txtcenter pb5 mb5"  >About</h3>
 			
 			<div class="con dflex dflex-m">
 				<div class="mr5 mr5-m">
-					<img class="staygrey ofitcon center-m" src="images/13600973458.png">
+					<img class="staygrey ofitcon center-m images" src="images/13600973458.png">
 				</div>
 				<div class="txtsize5 txtfont3 pl5 pr5 pt5-m">
 					<p class="pb3">Welcome to my graphic design portfolio! My name is Lizelda, and I'm a passionate graphic designer specializing in branding, packaging, and social media design. My particular interest lies in working with pet products, food, cosmetics, and luxury brands, but I am always eager to explore new industries and expand my skills as a graphic designer.</p>
@@ -583,7 +634,25 @@
 		document.getElementById("currentYear").textContent = currentYear;
 	</script>	
 	
+	<script>
+		const mbOn  = document.querySelector('.mb-on');
+		const mbOff = document.querySelector('.mb-off');
 
+		const mbNav = document.querySelector('.mb-nav');
+
+		mbOn.addEventListener('click', () => {
+		  mbNav.style.display = 'block';
+		  mbOn.style.display = 'none';
+		  mbOff.style.display = 'block';
+		});
+
+		mbOff.addEventListener('click', () => {
+		  mbNav.style.display = 'none';
+		  mbOn.style.display = 'block';
+		  mbOff.style.display = 'none';
+		});
+
+	</script>
 	
 </body>
 </html>
