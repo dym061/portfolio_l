@@ -105,6 +105,150 @@
 			.bgwhite{background-color: white;}
 			
 			.bottom0{bottom: 0;}
+
+			.border {
+			  border-style: solid;
+			}
+
+			.bordercol1 {
+			  border-color: var(--first);
+			}
+
+			.bordercol2 {
+			  border-color: var(--second);
+			}
+
+			.bordercol3 {
+			  border-color: var(--third);
+			}
+
+			.bordercol4 {
+			  border-color: var(--fourth);
+			}
+
+			.bordercol5 {
+			  border-color: var(--fifth);
+			}
+
+			.border1 {
+			  border-width: 1px 1px 1px 1px;
+			}
+
+			.bordertop1 {
+			  border-width: 1px 0px 0px 0px;
+			}
+
+			.borderright1 {
+			  border-width: 0px 1px 0px 0px;
+			}
+
+			.borderleft1 {
+			  border-width: 0px 0px 0px 1px;
+			}
+
+			.borderbottom1 {
+			  border-width: 0px 0px 1px 0px;
+			}
+
+			.border2 {
+			  border-width: 2px 2px 2px 2px;
+			}
+
+			.bordertop2 {
+			  border-width: 2px 0px 0px 0px;
+			}
+
+			.borderright2 {
+			  border-width: 0px 2px 0px 0px;
+			}
+
+			.borderleft2 {
+			  border-width: 0px 0px 0px 2px;
+			}
+
+			.borderbottom2 {
+			  border-width: 0px 0px 2px 0px;
+			}
+
+			.border3 {
+			  border-width: 3px 3px 3px 3px;
+			}
+
+			.bordertop3 {
+			  border-width: 3px 0px 0px 0px;
+			}
+
+			.borderright3 {
+			  border-width: 0px 3px 0px 0px;
+			}
+
+			.borderleft3 {
+			  border-width: 0px 0px 0px 3px;
+			}
+
+			.borderbottom3 {
+			  border-width: 0px 0px 3px 0px;
+			}
+
+			.borderround1 {
+			  border-radius: 5px;
+			}
+
+			.borderround2 {
+			  border-radius: 10px;
+			}
+
+			.borderround3 {
+			  border-radius: 15px;
+			}
+
+			.borderround4 {
+			  border-radius: 20px;
+			}
+
+			.borderround5 {
+			  border-radius: 25px;
+			}
+
+			.borderround10p {
+			  border-radius: 10%;
+			}
+
+			.borderround20p {
+			  border-radius: 20%;
+			}
+
+			.borderround30p {
+			  border-radius: 30%;
+			}
+
+			.borderround40p {
+			  border-radius: 40%;
+			}
+
+			.borderround50p {
+			  border-radius: 50%;
+			}
+
+			.borderround60p {
+			  border-radius: 60%;
+			}
+
+			.borderround70p {
+			  border-radius: 70%;
+			}
+
+			.borderround80p {
+			  border-radius: 80%;
+			}
+
+			.borderround90p {
+			  border-radius: 90%;
+			}
+
+			.borderround100p {
+			  border-radius: 100%;
+			}
 			
 			.btn1 {
 				background-color: white;
@@ -169,10 +313,9 @@
 			.hcenter1{justify-content:center;}
 			.hcenter2{margin: auto;width: 50%;}
 			.hcenter3{margin: auto;}
+			.hcenter4{margin: 0 auto;display: block;}
 			
 			header {position: fixed;z-index: 9999;}			
-			
-			.hcenter1{justify-content:center;}
 			
 			.images {}
 			
@@ -355,7 +498,45 @@
 
 			.zoom-up{transform: scale(1.05) translateY(-5px);transition:all .3s ease;}
 			
-			/*extra*/			
+			/*extra*/		
+			
+			.scroll-margins{	scroll-margin-top: 5rem;
+								scroll-snap-margin-top: 5rem;}
+			
+			::-webkit-scrollbar {
+			  width: 10px;
+			}
+
+			::-webkit-scrollbar-track {
+			  background: white;
+			}
+
+			::-webkit-scrollbar-thumb {
+			  background: var(--second);
+			}
+
+			::-webkit-scrollbar-thumb:hover {
+			  background: gray;
+			}
+
+			.back-to-top {
+			  padding:10px;
+			  background-color:#ffffff;
+			  position: fixed;
+			  bottom: 20px;
+			  right: 20px;
+			  font-size: 24px;
+			  cursor: pointer;
+			  display: none;
+
+			  border-radius: 50%;
+			  width: 50px;
+			  height: 50px; 
+			}
+			.back-to-top.show {
+			  display: block;
+			}
+
 			.footer-content {
 			  display: flex;
 			  align-items: center;
@@ -397,7 +578,6 @@
 			.mb-on {display: none;}
 			.mb-off {display: none;}
 
-			/* Style the toggle buttons */
 			.mb-on,
 			.mb-off {
 			  background: transparent;
@@ -428,6 +608,11 @@
 			  }
 			}
 
+			@media only screen and (max-width: 805px) {
+              .dflexm{display:block;}
+			  .hcenter4m{margin: 0 auto;display: block;}
+			}
+
 			@media only screen and (max-width: 768px) {
 			  .grid4c250p {
 				grid-template-columns: repeat(3, 166.6666px);
@@ -455,25 +640,11 @@
 
 			@media only screen and (max-width: 480px) {
 			  .grid4c250p {
-			   grid-template-columns: repeat(2, 125px);
-			   grid-auto-rows: 125px}
+			   grid-template-columns: repeat(1, 250px);
+			   grid-auto-rows: 250px;}
 			}
 		</style>
-		
-		<style>
-			.back-to-top {
-			  position: fixed;
-			  bottom: 20px;
-			  right: 20px;
-			  font-size: 24px;
-			  cursor: pointer;
-			  display: none;
-			}
-			.back-to-top.show {
-			  display: block;
-			}
-		</style>
-		
+			
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-6C3PV2D2D4"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
@@ -486,7 +657,7 @@
 
 	<body class="">
 		<div id="top"></div>
-		<header class="pt2 pb2 dflex possti w100p t0 bgwhite shadow0"> 
+		<header id="topnav" class="pt2 pb2 dflex possti w100p t0 bgwhite shadow0"> 
 			<div class="con w100p">
 				<h1 class="txtcenter txtfont1 txtsize5 txtupper animate__animated animate__fadeIn animate__delay-3s">Graphic Designer</h1>
 				<h2 class="animate__animated animate__fadeIn animate__delay-2s txtfont4 h4 txtcenter ">Lizelda von Francois</h2>
@@ -494,7 +665,8 @@
 				<nav class="hcenter2">
 					<div class="animate__animated animate__fadeIn animate__delay-4s">
 						<ul class="dflex jusspacee">
-							<li><a href="#top" class="nav-link txtcol1 txtfont2 txtsize3 txtupper pb1">Portfolio</a></li>
+							<li><a href="#top" class="nav-link txtcol1 txtfont2 txtsize3 txtupper pb1">Projects</a></li>
+							<li><a href="#portfolio" class="nav-link txtcol1 txtfont2 txtsize3 txtupper pb1">Portfolio</a></li>
 							<li><a href="#about" class="nav-link txtcol1 txtfont2 txtsize3 txtupper pb1">About</a></li>
 							<li><a href="#contact" class="nav-link txtcol1 txtfont2 txtsize3 txtupper pb1">Contact</a></li>
 						</ul>
@@ -502,13 +674,14 @@
 				</nav>
 				
 				<div class="fright mr5">
-				<button class="mb-on"><i class="fas fa-bars"></i></button>
-				<button class="mb-off"><i class="fas fa-times"></i></button>
+					<button class="mb-on"><i class="fas fa-bars"></i></button>
+					<button class="mb-off"><i class="fas fa-times"></i></button>
 				</div>
 
 				<div class="mb-nav">
 					<ul class="hcenter2 txtcenter">
-						<li><a href="#top" class="nav-link txtcol1 txtfont2 txtsize3 txtupper pb1">Portfolio</a></li>
+						<li><a href="#top" class="nav-link txtcol1 txtfont2 txtsize3 txtupper pb1">Projects</a></li>
+						<li><a href="#portfolio" class="nav-link txtcol1 txtfont2 txtsize3 txtupper pb1">Portfolio</a></li>
 						<li><a href="#about" class="nav-link txtcol1 txtfont2 txtsize3 txtupper pb1">About</a></li>
 						<li><a href="#contact" class="nav-link txtcol1 txtfont2 txtsize3 txtupper pb1">Contact</a></li>
 					</ul>
@@ -517,58 +690,156 @@
 			</div>
 		</header>
 		
-		<div class="mt5"></div>
+		<section class="scroll-margins pb5" id="projects">
 		
-		<section class="pt5" id="portfolio ">
-		
-			<button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
-		
-			<h3 class="txtcenter"></h3>
+			<h3 class="h4 txtfont1 txtcenter pb3 pt3">My Projects</h3>
+			<div class="con animate__animated animate__fadeIn animate__delay-2s">
+
+				<div class="border borderbottom1 bordercol4 mb3">
+					<div class="txtfont2 txtsize5 txtcenter txtupper pb3">Mutts Munchies</div>
+					<div class="dflex dflexm">
+						<div  class="hcenter4">
+							<img class="hcenter4m ofitcon center-m images p2" src="images/091.jpg">
+							<img class="hcenter4m ofitcon center-m images p2" src="images/092.jpg">
+						</div>
+					</div>
+					<div class="">
+						<p class="p3 txtfont3 txtsize5">
+						I designed a dog brand named Mutts Munchies, which offers a range of high-quality, all-natural treats for dogs. The brand features a unique orange packaging that exudes a cheerful vibe with a white accent. The packaging showcases an image of a happy dog relishing a bowl of wet food, which adds to the brand's appeal. As a graphic designer, I am confident that Mutts Munchies will stand out on the shelves and provide pet owners with a trustworthy and delicious treat option for their furry companions.
+						</p>	
+					</div>
+				</div>
+
+				<div class="border borderbottom1 bordercol4 mb3">
+					<div class="txtfont2 txtsize5 txtcenter txtupper pb3">Country Delights</div>
+					<div class="dflex dflexm">
+						<div  class="hcenter4">
+							<img class="hcenter4m ofitcon center-m images p2" src="images/231.jpg">
+						</div>
+					</div>
+					<div class="">
+						<p class="p3 txtfont3 txtsize5">
+						I designed the label for Countryside Delights, a delicious jelly product. It's made with mixed berries and contains no added sugar, and comes in a transparent bottle with a white lid. The cream label features a picture of the mixed berries, and the jelly inside is a beautiful shade of red. Perfect for spreading on your favorite sandwich!
+						</p>	
+					</div>
+				</div>
+
+				<div class="border borderbottom1 bordercol4 mb3">
+					<div class="txtfont2 txtsize5 txtcenter txtupper pb3">Lumiere Lux</div>
+					<div class="dflex dflexm">
+						<div  class="hcenter4">
+							<img class="hcenter4m ofitcon center-m images p2" src="images/05.jpg">
+							<img class="hcenter4m ofitcon center-m images p2" src="images/146.jpg">
+						</div>
+					</div>
+					<div class="p3 txtfont3 txtsize5">
+						<p class="pb2">
+						I designed Lumiere Lux, a luxury candle label that exudes elegance and sophistication in every detail. The label features a sleek black and white design that creates a striking contrast, emphasizing the premium quality of the product.
+						</p>	
+						<p class="pb2">
+						To complement the label, I also designed business cards that incorporate the same black and white aesthetic.
+						</p>
+						<p>
+						Overall, I wanted Lumiere Lux to be a brand that represents timeless elegance and luxury. The black and white design creates a classic and sophisticated look that will appeal to discerning customers who appreciate the finer things in life.
+						</p>
+					</div>						
+				</div>
+
+				<div class="border borderbottom1 bordercol4 mb3">
+					<div class="txtfont2 txtsize5 txtcenter txtupper pb3">Canadian Winter Coffee</div>
+					<div class="dflex dflexm">
+						<div  class="hcenter4">
+							<img class="hcenter4m ofitcon center-m images p2" src="images/07.jpg">
+						</div>
+					</div>
+					<div class="">
+						<p class="p3 txtfont3 txtsize5">
+						I designed Canadian Winter Coffee with a focus on capturing the essence of the cold winter months in Canada. The packaging is simple yet elegant, with two options available: a soft blue pouch and a soft pink pouch. Each pouch features a beautiful image of the cold mountains in Canada, which adds a touch of natural beauty to the overall design. To convey the idea of morning time, I added a bird chirping on the cup of coffee icon on the pouch, which creates a sense of warmth and comfort. The result is a premium coffee brand that not only tastes great but also looks and feels great.
+						</p>	
+					</div>
+				</div>
+
+				<div class="border borderbottom1 bordercol4 mb3">
+					<div class="txtfont2 txtsize5 txtcenter txtupper pb3">Moon Club</div>
+					<div class="dflex dflexm">
+						<div  class="hcenter4">
+							<img class="hcenter4m ofitcon center-m images p2" src="images/180.jpg">
+						</div>
+					</div>
+					<div class="">
+						<p class="p3 txtfont3 txtsize5">
+						I created a wine brand called Moon Club for a company, St. Julian Winery. The concept behind this label was to convey that the wine is so exceptional that it will take you to the moon. To achieve this impression, I designed a grey label with a space man, and used bright neon pink for the word "Moon Club" and the lid. I wanted the label to stand out on the shelf and emphasize the brand name.
+						</p>	
+					</div>
+				</div>
+
+				<div class="mb3">
+					<div class="txtfont2 txtsize5 txtcenter txtupper pb3">Mellow Drops Candy</div>
+					<div class="dflex dflexm">
+						<div  class="hcenter4">
+							<img class="hcenter4m ofitcon center-m images p2" src="images/03.jpg">
+							<img class="hcenter4m ofitcon center-m images p2" src="images/108.jpg">
+						</div>
+					</div>
+					<div class="">
+						<p class="p3 txtfont3 txtsize5">
+						As the designer behind Mellow Drops Candy, I aimed to create a candy brand that captured the soft, sweet and indulgent experience of eating marshmallows. I chose a color scheme of soft pink and purple for the packaging, to give it a feminine and playful feel. The marshmallow imagery was a no-brainer, as it perfectly represents the candy's flavor and texture. The logo design was crafted to be simple and memorable, using a playful font that captures the candy's lighthearted and fun nature. Overall, I am proud of the design I created for Mellow Drops Candy and I hope that people will enjoy the candy as much as I enjoyed designing it.
+						</p>	
+					</div>					
+				</div>				
+				
+			</div>
+			<div></div> 
+		</section>	
+
+		<section class="scroll-margins  pb5" id="portfolio" >
+
+			<h3 class="h4 txtfont1 txtcenter pb5 mb5"  >My Portfolio</h3>
 			<div class="dflex hcenter1 animate__animated animate__fadeIn animate__delay-2s">
 				<div class="dgrid grid4c250p gap0 ">
-					<img class="h100p w100p ofitcov zoomthis" src="images/01.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/091.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/092.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/231.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/05.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/146.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/147.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/148.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/149.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/07.jpg">					
-					<img class="h100p w100p ofitcov zoomthis" src="images/102.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/180.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/233.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/155.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/230.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/232.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/179.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/103.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/152.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/107.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/03.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/108.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/02.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/044.jpg">					
-					<img class="h100p w100p ofitcov zoomthis" src="images/122.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/123.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/124.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/126.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/131.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/140.png">
-					<img class="h100p w100p ofitcov zoomthis" src="images/141.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/151.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/106.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/153.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/104.jpg">
-					<img class="h100p w100p ofitcov zoomthis" src="images/225.jpg">
+					<img class="h100p w100p ofitcov" src="images/01.jpg">
+					<img class="h100p w100p ofitcov" src="images/091.jpg">
+					<img class="h100p w100p ofitcov" src="images/092.jpg">
+					<img class="h100p w100p ofitcov" src="images/231.jpg">
+					<img class="h100p w100p ofitcov" src="images/05.jpg">
+					<img class="h100p w100p ofitcov" src="images/146.jpg">
+					<img class="h100p w100p ofitcov" src="images/147.jpg">
+					<img class="h100p w100p ofitcov" src="images/148.jpg">
+					<img class="h100p w100p ofitcov" src="images/149.jpg">
+					<img class="h100p w100p ofitcov" src="images/07.jpg">					
+					<img class="h100p w100p ofitcov" src="images/102.jpg">
+					<img class="h100p w100p ofitcov" src="images/180.jpg">
+					<img class="h100p w100p ofitcov" src="images/233.jpg">
+					<img class="h100p w100p ofitcov" src="images/155.jpg">
+					<img class="h100p w100p ofitcov" src="images/230.jpg">
+					<img class="h100p w100p ofitcov" src="images/232.jpg">
+					<img class="h100p w100p ofitcov" src="images/179.jpg">
+					<img class="h100p w100p ofitcov" src="images/103.jpg">
+					<img class="h100p w100p ofitcov" src="images/152.jpg">
+					<img class="h100p w100p ofitcov" src="images/107.jpg">
+					<img class="h100p w100p ofitcov" src="images/03.jpg">
+					<img class="h100p w100p ofitcov" src="images/108.jpg">
+					<img class="h100p w100p ofitcov" src="images/02.jpg">
+					<img class="h100p w100p ofitcov" src="images/044.jpg">					
+					<img class="h100p w100p ofitcov" src="images/122.jpg">
+					<img class="h100p w100p ofitcov" src="images/123.jpg">
+					<img class="h100p w100p ofitcov" src="images/124.jpg">
+					<img class="h100p w100p ofitcov" src="images/126.jpg">
+					<img class="h100p w100p ofitcov" src="images/131.jpg">
+					<img class="h100p w100p ofitcov" src="images/140.jpg">
+					<img class="h100p w100p ofitcov" src="images/141.jpg">
+					<img class="h100p w100p ofitcov" src="images/151.jpg">
+					<img class="h100p w100p ofitcov" src="images/106.jpg">
+					<img class="h100p w100p ofitcov" src="images/153.jpg">
+					<img class="h100p w100p ofitcov" src="images/104.jpg">
+					<img class="h100p w100p ofitcov" src="images/225.jpg">
 				</div>
 			</div>
 		</section>		
 		
 		<div id="about"></div>
-		<section class=" pt5 mb5 animate__animated animate__fadeIn animate__delay-3s pt5 mt5" >
-			<h3 class=" h4 txtfont1 txtcenter pb5 mb5"  >About</h3>
+		<section class="scroll-margins pt5 mb5 animate__animated animate__fadeIn animate__delay-3s" >
+			<h3 class="h4 txtfont1 txtcenter pb5 mb5"  >About Me</h3>
 			
 			<div class="con dflex dflex-m">
 				<div class="mr5 mr5-m">
@@ -586,13 +857,15 @@
 			</div>
 		</section>	
 
-		<section class="animate__animated animate__fadeIn animate__delay-5s  pt5 mt5" id="contact">
-		<h3 class="h4 txtfont1 txtcenter  pb5 mb5" >Contact</h3>
-		<div class="hcenter2">
-			<div class='btn1 txtfont1 hcenter3' id="email-address" onclick="location.href='mailto:&#108;&#105;&#122;&#101;&#108;&#100;&#97;&#118;&#111;&#110;&#102;&#114;&#97;&#110;&#99;&#111;&#105;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;'">Email me</div>
-		<div>
+		<section class="scroll-margins animate__animated animate__fadeIn animate__delay-5s  pt5 mt5" id="contact">
+			<h3 class="h4 txtfont1 txtcenter  pb5 mb5" >Contact Me</h3>
+			<div class="hcenter2">
+				<div class='btn1 txtfont1 hcenter3' id="email-address" onclick="location.href='mailto:&#108;&#105;&#122;&#101;&#108;&#100;&#97;&#118;&#111;&#110;&#102;&#114;&#97;&#110;&#99;&#111;&#105;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;'">Email me</div>
+			<div>
 		
 		</section>
+
+		<button class="back-to-top"><i class="fas fa-arrow-up "></i></button>
 		
 		<footer id="myFooter" class="animate__animated animate__fadeIn animate__delay-5s pt5 pb1 mb1 txtcenter txtsize3 txtfont3 footer-content"> 
 			 <span>&copy;</span>&nbsp;<span id="currentYear"></span>&nbsp;<span>Lizelda von Francois</span>
@@ -647,6 +920,8 @@
 	</script>	
 	
 	<script>
+	
+
 		const mbOn  = document.querySelector('.mb-on');
 		const mbOff = document.querySelector('.mb-off');
 
